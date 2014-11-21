@@ -11,5 +11,8 @@
             "OKLM\\StringGenerator\\": "src",
             "Tests\\OKLM\\StringGenerator\\": "tests"
         }
+    },
+    "config": {
+        "bin-dir": "bin"
     }
 }

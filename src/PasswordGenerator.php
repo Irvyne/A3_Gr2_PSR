@@ -54,7 +54,7 @@ class PasswordGenerator
             throw new \Exception('Invalid strength');
         }
 
-        switch($strength){
+        switch ($strength) {
             case self::PASSWORD_EASY:
                 $string = self::$strengthEasy;
                 break;
@@ -68,10 +68,10 @@ class PasswordGenerator
 
         $password = '';
 
-        for($i = 0; $i < $rand; $i++){
+        for ($i = 0; $i < $rand; $i++) {
             $password .= mb_substr($string, mt_rand(0, mb_strlen($string)-1), 1);
         }
 
         return $password;
     }
-} 
+}
